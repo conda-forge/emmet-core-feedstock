@@ -1,0 +1,18 @@
+From bc75f70555d5ae2a3bfce52f24274ad652dfe283 Mon Sep 17 00:00:00 2001
+From: materialsproject <feedback@materialsproject.org>
+Date: Tue, 27 Sep 2022 22:02:40 +0000
+Subject: [PATCH] Updated version file
+
+---
+ emmet-core/_version.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/emmet-core/_version.py b/emmet-core/_version.py
+index e93a791b8..593ef0e94 100644
+--- a/emmet-core/_version.py
++++ b/emmet-core/_version.py
+@@ -1 +1 @@
+-__version__ = "0.36.3"
+\ No newline at end of file
++__version__ = "0.36.4"
+\ No newline at end of file
