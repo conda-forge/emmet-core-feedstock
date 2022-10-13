@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: cd emmet-core && {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -28,7 +28,7 @@ requirements:
     - pydantic ==1.10.2
     - pymatgen >=2021.3,<2023.0
     - python >=3.8
-    - spglib <2.0.0
+    - spglib <3.0.0
     - typing-extensions >=3.7,<5.0
 
 test:
