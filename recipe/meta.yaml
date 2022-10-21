@@ -14,8 +14,8 @@ source:
 
 build:
   noarch: python
-  script: cd emmet-core && {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
