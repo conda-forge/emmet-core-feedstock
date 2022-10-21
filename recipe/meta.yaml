@@ -8,7 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
   sha256: 4fe298ae8d623af4eac602fc734041363dcbafd6be2293c85a7937b9ccdceddc
-  # patches:
+  patches:
+    - pypi.patch
     # - version.patch
     # - spglib.patch
 
