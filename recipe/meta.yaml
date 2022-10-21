@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.37.0" %}
+{% set version = "0.38.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/materialsproject/emmet/archive/v{{ version }}.tar.gz
-  sha256: 96faa008b25fbb7777fd28cdf0703b8b2af8153a1b7b7099e76f67e09c88a5a9
+  sha256: fb3127b078897b824ad14698185136f6e757ee773ec0dcb32f681248e70a6803
   patches:
     - version.patch
     # - spglib.patch
