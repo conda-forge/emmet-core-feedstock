@@ -12,5 +12,5 @@ index 2d93b0cd2..978180b4c 100644
 --- a/emmet-core/_version.py
 +++ b/emmet-core/_version.py
 @@ -1 +1 @@
--__version__ = "0.37.0"
-+__version__ = "0.38.0"
+-__version__ = "0.38.0"
++__version__ = "0.38.1"
