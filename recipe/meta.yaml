@@ -10,7 +10,7 @@ source:
   sha256: fb3127b078897b824ad14698185136f6e757ee773ec0dcb32f681248e70a6803
   patches:
     - version.patch
-    # - spglib.patch
+    - spglib.patch
 
 build:
   noarch: python
