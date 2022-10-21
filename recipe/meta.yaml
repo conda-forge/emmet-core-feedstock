@@ -9,8 +9,7 @@ source:
   url: https://github.com/materialsproject/emmet/archive/v{{ version }}.tar.gz
   sha256: 0a73fa15372d9d1837ccedec853354e9b756cfd0e4cf3ef7111ed028467bae5d
   patches:
-    - version.patch
-    # - spglib.patch
+    # - version.patch
 
 build:
   noarch: python
