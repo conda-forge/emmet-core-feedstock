@@ -6,16 +6,15 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/materialsproject/emmet/archive/v{{ version }}.tar.gz
-  sha256: fb3127b078897b824ad14698185136f6e757ee773ec0dcb32f681248e70a6803
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
+  sha256: 4fe298ae8d623af4eac602fc734041363dcbafd6be2293c85a7937b9ccdceddc
   patches:
-    - version.patch
-    - spglib.patch
+    - pypi.patch
 
 build:
   noarch: python
-  script: cd emmet-core && {{ PYTHON }} -m pip install . -vv
-  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
