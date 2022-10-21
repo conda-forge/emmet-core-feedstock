@@ -12,7 +12,7 @@ index e93a791b8..593ef0e94 100644
 --- a/emmet-core/_version.py
 +++ b/emmet-core/_version.py
 @@ -1 +1 @@
--__version__ = "0.36.9"
+-__version__ = "0.37.0"
 \ No newline at end of file
-+__version__ = "0.37.0"
++__version__ = "0.38.0"
 \ No newline at end of file
