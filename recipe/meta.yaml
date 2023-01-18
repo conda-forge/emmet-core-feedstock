@@ -28,7 +28,7 @@ requirements:
     - pydantic =1.10.2
     - pymatgen >=2021.3,<2023.0
     - python >=3.8
-    - spglib =2.0.1
+    - spglib =2.0.2
     - typing-extensions >=3.7,<5.0
 
 test:
