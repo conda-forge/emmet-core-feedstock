@@ -1,0 +1,25 @@
+From 037fe1f3ae3faf268a669e27f13eacf92f768c23 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jan=20Jan=C3=9Fen?= <janssen@mpie.de>
+Date: Mon, 3 Jul 2023 00:47:06 -0600
+Subject: [PATCH] fix settings
+
+---
+ emmet/core/settings.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/emmet/core/settings.py b/emmet/core/settings.py
+index c441660..8acfcf2 100644
+--- a/emmet/core/settings.py
++++ b/emmet/core/settings.py
+@@ -9,9 +9,10 @@
+ 
+ import requests
+ from monty.json import MontyDecoder
+-from pydantic import BaseSettings, Field, root_validator
++from pydantic import Field, root_validator
+ from pydantic.class_validators import validator
+ from pydantic.types import PyObject
++from pydantic_settings import BaseSettings
+ 
+ DEFAULT_CONFIG_FILE_PATH = str(Path.home().joinpath(".emmet.json"))
+ 
