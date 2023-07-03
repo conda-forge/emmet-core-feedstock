@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
     - monty >=2021.3
     - numpy
     - pybtex >=0.24
-    - pydantic >=1.10.2
+    - pydantic >=1.10.2,<2
     - pymatgen >=2021.3
     - python >=3.8
     - spglib >=2.0.1
