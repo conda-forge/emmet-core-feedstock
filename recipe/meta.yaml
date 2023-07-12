@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -25,7 +25,7 @@ requirements:
     - numpy
     - pybtex >=0.24
     - pydantic >=1.10.2,<2
-    - pymatgen >=2021.3
+    - pymatgen >=2023.5.8
     - python >=3.8
     - spglib >=2.0.1
     - typing-extensions >=3.7,<5.0
