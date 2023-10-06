@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.69.5" %}
+{% set version = "0.69.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
-  sha256: 7fdd95f2e951a9cd6fe39c43ca5ca3f08c2f6a5cb1fac625ce0034335740c39d
+  sha256: d3eb9700472e5f8eed30266033a410dde25e60fbddfabd91cfa300a5ac3ae890
 
 build:
   noarch: python
@@ -21,13 +21,13 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - pymatgen <=2023.9.10
-    - monty >=2021.3
+    - pymatgen >=2023.10.4
+    - monty >=2023.9.25
     - pydantic >=2.0
     - pydantic-settings >=2.0
     - pydantic-core >=2.0
     - pybtex >=0.24,<1.dev0
-    - typing-extensions >=3.7,<5.0
+    - typing-extensions >=3.7
     - spglib >=2.0.1
 
 test:
