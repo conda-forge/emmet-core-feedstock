@@ -8,6 +8,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
   sha256: d7a91879a3b9fa1bb58c7e0a96f63fd966bfe6456fe0f11342a76e4af00ec4d3
+  patches:
+    - setup.patch
 
 build:
   noarch: python
