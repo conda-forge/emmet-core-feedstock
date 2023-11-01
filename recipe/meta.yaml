@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.71.2" %}
+{% set version = "0.72.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
-  sha256: d7a91879a3b9fa1bb58c7e0a96f63fd966bfe6456fe0f11342a76e4af00ec4d3
+  sha256: 2e5bd9acbbea9f06212ee7245eebe4f81a5daf2e2282f70f2724ce73e0144560
   patches:
     - setup.patch
 
