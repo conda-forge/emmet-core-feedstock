@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.77.1" %}
+{% set version = "0.78.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
-  sha256: e71d7950666f4755eae6c9262fa263053078e1ab48a8700bba5fe5f3cd777729
+  sha256: d8daddbadc6dae2ac0fa4a2c151dbb4ed0d7599445087f6e3908d7d5949434a9
   patches:
     - setup.patch
 
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.9
     - pymatgen >=2023.10.11
-    - monty >=2023.9.25
+    - monty >=2024.2.2
     - pydantic >=2.0
     - pydantic-settings >=2.0
     - pydantic-core >=2.0
