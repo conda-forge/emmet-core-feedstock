@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.83.9" %}
+{% set version = "0.84.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emmet-core-{{ version }}.tar.gz
-  sha256: 9c1289bcc77d038b2651c85a9f20fae7e16d70666f8c80ccd75e288af06d094a
+  sha256: 1c9f7a76bca954f3df9952caca04d3b421b8fa1c376ec42523933a0f3cd49158
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - setuptools-scm
     - pip
   run:
+    - numpy <2
     - python >=3.9
     - pymatgen ==2024.4.13
     - monty >=2024.2.2
