@@ -1,5 +1,6 @@
 {% set name = "emmet-core" %}
 {% set version = "0.84.6" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
