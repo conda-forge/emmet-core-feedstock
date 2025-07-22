@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,17 +22,14 @@ requirements:
     - setuptools-scm
     - pip
   run:
-    - typing_extensions >=3.7
-    - numpy <2
-    - python >={{ python_min }}
-    - pymatgen >=2024.6.10
     - monty >=2024.2.2
+    - pybtex >=0.24,<1.dev0
     - pydantic >=2.0
     - pydantic-settings >=2.0
     - pydantic-core >=2.0
-    - pybtex >=0.24,<1.dev0
-    - typing-extensions >=3.7
-    - spglib >=2.0.1
+    - pymatgen >=2024.6.10
+    - python >={{ python_min }}
+    - typing_extensions >=3.7
 
 test:
   imports:
