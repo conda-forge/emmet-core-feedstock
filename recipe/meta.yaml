@@ -1,5 +1,5 @@
 {% set name = "emmet-core" %}
-{% set version = "0.84.9" %}
+{% set version = "0.84.10" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 13c2b8dc5785940ba02fa4f76d17f5509d8b3af944ad2e023bce9bcd9299eb54
+  sha256: 7da3ec4cd6aa6c9bdc5a1b6cd484c36284416311c29226776124fd2fb228fba7
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm
     - pip
   run:
+    - pymatgen-io-validation >=0.1.0
     - monty >=2024.2.2
     - pybtex >=0.24,<1.dev0
     - pydantic >=2.0
