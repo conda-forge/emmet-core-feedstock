@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: emmet-core
-  version: "0.87.2"
+  version: 0.87.3
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 2a525752401626c537183d35cb3bd1f4a7aaae564f4867e75d06e6be655c0248
+  sha256: 89bec08257f015bb5c2d463b9e5c2fe75d432e986162a41ac6a299e09f95e310
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -32,11 +32,10 @@ requirements:
     - pybtex >=0.24,<1.dev0
     - pydantic >=2.12
     - pydantic-settings >=2.0
-    - pydantic-core >=2.0
-    - pymatgen >=2024.6.10
+    - pymatgen
     - python >=${{ python_min }}
     - typing_extensions >=3.7
-
+    - pymatgen-core >=2026.7.31
 tests:
   - python:
       imports:
@@ -45,7 +44,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}
-        - "*"
+        - '*'
 
 about:
   summary: Core Emmet Library
