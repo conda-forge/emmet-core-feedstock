@@ -2,7 +2,8 @@ schema_version: 1
 
 context:
   name: emmet-core
-  version: 0.87.3
+  version: 0.88.0
+  python_min: "3.12"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 89bec08257f015bb5c2d463b9e5c2fe75d432e986162a41ac6a299e09f95e310
+  sha256: d4757b183853e7af60413a8d98250df4990f5fcc4e3b0b76defc3c654d410c55
 
 build:
   number: 0
@@ -20,8 +21,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
-    - setuptools-scm
+    - hatchling
     - pip
   run:
     - inflect
@@ -34,7 +34,6 @@ requirements:
     - pydantic-settings >=2.0
     - pymatgen
     - python >=${{ python_min }}
-    - typing_extensions >=3.7
     - pymatgen-core >=2026.7.31
 tests:
   - python:
