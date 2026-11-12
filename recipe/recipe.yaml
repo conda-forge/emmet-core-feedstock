@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: emmet-core
-  version: "0.88.2"
+  version: "0.88.3"
   python_min: "3.12"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f2bf5c86d7771c028aac970530503946d1d688ee5685c9d548c6fe75b9539a04
+  sha256: b14eb0f02dbbf49c24edce16a99eebd0b853232a43ded86dab488a9c0bc6de08
 
 build:
   number: 0
